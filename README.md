@@ -1,4 +1,4 @@
-# Free Template
+# Free Template (AUN ESTA EN DESARROLLO, PRONTO VIDEO EN MI CANAL.)
 Esta es una **plantilla gratis**, sirve como una biografia tuya con tus redes. 😃
 Es 100% editable, sin necesidad de tocar el codigo de la Pagina. (Evitar hacer eso)
 # Proyect Info
@@ -7,7 +7,6 @@ Para editar cosas como del **Nav** ir a **pages/index.astro**. Les recomiendo mi
 
 # Icons
 Aqui les dejo una lista de los Iconos que pueden poner en el Nav (Maximo 4).
-
 **Youtube**: bi bi-youtube
 **Twitch**: bi bi-twitch
 **Discord**: bi bi-discord
