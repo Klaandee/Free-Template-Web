@@ -1,0 +1,68 @@
+---
+const { name, icon1, icon2, icon3, icon4, link1, link2, link3, link4 } =
+    Astro.props;
+---
+
+<!-- Evitar editar cosas que puedan romper la pagina -->
+<header class="head-main">
+    <div class="head-bck">
+        <div class="head-content">
+            <h2>{name}</h2>
+            <div class="head-icons">
+                <a href={link1}><i class={icon1}></i></a>
+                <a href={link2}><i class={icon2}></i></a>
+                <a href={link3}><i class={icon3}></i></a>
+                <a href={link4}><i class={icon4}></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- CSS -->
+<style>
+    /* Aqui editas partes del Head! */
+    :root {
+        --headbg: #2c2c2c;
+        --name-color: #fff;
+        --icons-color: #fff;
+    }
+    
+    /* Resto del CSS (no tocar) */
+    .head-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .head-bck {
+        max-height: 5rem;
+        min-height: 5rem;
+        min-width: 1024px;
+        max-width: 1024px;
+        background: var(--headbg);
+        box-shadow: 2px -2px 76px 9px var(--headbg);
+        -webkit-box-shadow: 2px -2px 76px 9px var(--headbg);
+        -moz-box-shadow: 2px -2px 76px 9px var(--headbg);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .head-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .head-content h2 {
+        color: var(--name-color);
+        margin: 0.8rem;
+        margin-left: 3rem;
+        font-size: 3rem;
+        font-family: sans-serif;
+    }
+    .head-icons {
+        margin-right: 3rem;
+        display: flex;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    .head-icons i {
+        color: var(--icons-color);
+        font-size: 2rem;
+    }
+</style>
